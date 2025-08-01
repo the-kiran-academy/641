@@ -1,0 +1,44 @@
+header {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.custom-table {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .custom-table th {
+      background-color: #4e73df;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 12px;
+    }
+    .custom-table td {
+      padding: 12px;
+      vertical-align: middle;
+      color: #333;
+    }
+    .custom-table tbody tr {
+      transition: background-color 0.3s ease;
+    }
+    .custom-table tbody tr:hover {
+      background-color: #f8f9fc;
+    }
+    .custom-table .password-cell {
+      font-family: 'Courier New', Courier, monospace;
+      color: #6c757d;
+    }
+    @media (max-width: 576px) {
+      .custom-table {
+        font-size: 14px;
+      }
+      .custom-table th, .custom-table td {
+        padding: 8px;
+      }
+    }
+
+main.container {
+  min-height: 60vh;
+}

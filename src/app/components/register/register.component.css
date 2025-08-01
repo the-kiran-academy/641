@@ -1,0 +1,22 @@
+.register-container {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.card {
+  border-radius: 16px;
+  border: none;
+  margin-bottom:100px;
+}
+
+.btn-success {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+input.form-control:focus {
+  box-shadow: 0 0 0 2px #19875433;
+}
+
+span{
+  color: red;
+}

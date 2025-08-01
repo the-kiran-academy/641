@@ -1,0 +1,18 @@
+.welcome-main {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+}
+
+.welcome-img {
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+nav.navbar {
+  margin-bottom: 0;
+}

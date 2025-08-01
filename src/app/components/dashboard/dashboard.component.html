@@ -1,0 +1,57 @@
+<header class="bg-primary text-white py-3 mb-4">
+  <div class="container text-center">
+    <h1 class="m-0">Employee Management Dashboard</h1>
+  </div>
+</header>
+
+<div class="container-fluid mt-4">
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered custom-table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of employees">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name | uppercase}}</td>
+            <td>{{emp.email}}</td>
+            <td class="password-cell">{{emp.password | maskPassword}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+<!-- <main class="container mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title mb-3">Welcome to the Employee Management System</h3>
+          <p class="card-text">
+            This application allows you to manage employee records efficiently. You can add, update, view, and delete employee information. Use the navigation menu to access different features such as employee registration, login, and dashboard overview.
+          </p>
+          <ul class="list-group list-group-flush mb-3">
+            <li class="list-group-item">✔️ Add new employees</li>
+            <li class="list-group-item">✔️ Update employee details</li>
+            <li class="list-group-item">✔️ View all employees</li>
+            <li class="list-group-item">✔️ Delete employee records</li>
+          </ul>
+          <p class="text-muted">Stay organized and keep your employee data up to date!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main> -->
+
+
+
+<app-footer></app-footer>
+

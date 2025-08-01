@@ -1,0 +1,29 @@
+<div class=" d-flex align-items-center justify-content-center min-vh-100 bg-light">
+  <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+    <h2 class="text-center mb-4 text-success">Register</h2>
+    <form [formGroup]="employee" (ngSubmit)="register()">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" formControlName="email" required>
+      <span *ngIf="employee.get('email')?.invalid && employee.get('email')?.touched">Invalid Email</span>
+      </div>
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter Name" name="name" formControlName="name" required>
+      <span *ngIf="employee.get('name')?.invalid && employee.get('name')?.touched">Invalid Name</span>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enater Password" name="password" formControlName="password" required>
+      <span *ngIf="employee.get('password')?.invalid && employee.get('password')?.touched">Invalid Password</span>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Register</button>
+    </form>
+    <div class="mt-3 text-center">
+      <span>Already have an account?</span>
+      <a routerLink="/login" class="text-decoration-none text-primary">Login</a>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
