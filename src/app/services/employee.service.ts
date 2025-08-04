@@ -23,4 +23,23 @@ export class EmployeeService {
     return this.http.get('http://localhost:8080/getAll');
   }
 
+  // http://localhost:8080/delete
+
+  deleteEmployee(id: any): Observable<any> {
+    return this.http.delete(
+      `http://localhost:8080/delete?id=${id}`
+    )
+  }
+
+  //http://localhost:8080/getById?id=1
+
+  getEmpById(id:any): Observable<any> {
+    return this.http.get(`http://localhost:8080/getById?id=${id}`)
+  }
+
+// http://localhost:8080/update
+  updateEmployee(employee:any):Observable<any>{
+    return this.http.put('http://localhost:8080/update', employee)
+  }
+
 }

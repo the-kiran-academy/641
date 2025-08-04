@@ -20,7 +20,7 @@ const routes: Routes = [
     path:'dashboard', component:DashboardComponent
   },
   {
-    path:'update',component:UpdateEmployeeComponent
+    path:'update/:id',component:UpdateEmployeeComponent
   }
 ];
 

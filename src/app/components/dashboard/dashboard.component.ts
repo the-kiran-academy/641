@@ -22,4 +22,16 @@ export class DashboardComponent implements OnInit {
     })
   }
 
+  deleteEmployee(id: any) {
+    this.service.deleteEmployee(id).
+    subscribe(res => {
+      if (res) {
+        alert('Employee Deleted Successfully');
+      } else {
+        alert('Something went wrong');
+      }
+    })
+
+  }
+
 }
