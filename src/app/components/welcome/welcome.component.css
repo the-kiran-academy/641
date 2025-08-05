@@ -10,9 +10,27 @@
   max-height: 500px;
   object-fit: cover;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 nav.navbar {
   margin-bottom: 0;
+}
+
+.crm-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.crm-brand:hover {
+  color: #ffc107;
+  /* Bootstrap warning color */
+  transform: scale(1.05);
 }
