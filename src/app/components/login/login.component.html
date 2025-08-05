@@ -3,11 +3,11 @@
     <h2 class="text-center mb-4 text-primary">Login</h2>
     <form>
       <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
+        <label for="email" class="form-label"><b>Email address</b></label>
         <input type="email" class="form-control" id="email" placeholder="Enter email" name="username" [(ngModel)]="userLogin.username"  required>
       </div>
       <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
+        <label for="password" class="form-label"><b>Password</b></label>
         <input type="password" class="form-control" id="password" placeholder="Password" name="password" [(ngModel)]="userLogin.password" required>
       </div>
       <button (click)="login()" class="btn btn-primary w-100">Login</button>
