@@ -20,15 +20,19 @@ export class RegisterComponent {
   )
 
   register() {
-    this.service.register(this.employee.value).subscribe(res => {
-      if (res) {
-        alert("Employee Added !");
-        this.router.navigateByUrl('login');
-      } else {
-        alert("Something went wrong during Registration ");
-        this.router.navigateByUrl('');
+    this.service.register(this.employee.value).subscribe(
+      {
+        next: (res) => {
+          alert('User Added !')
+        },
+        error: (httpErrorResponse) => {
+          console.log('====================================');
+          console.log(httpErrorResponse);
+          console.log('====================================');
+          alert(httpErrorResponse.error.message)
+        }
       }
-    })
+    )
 
 
   }
