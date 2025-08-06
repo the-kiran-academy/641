@@ -12,13 +12,13 @@ export class MaskPasswordPipe implements PipeTransform {
    console.log(last2);
    console.log('====================================');
 
-    const size = pass.length-2;
+    const size = pass.length;
     let maskedPassword = ''
 
     for (let i = 0; i < size; i++) {
       maskedPassword +="*"
     }
-    maskedPassword+=last2;
+    
     return maskedPassword;
   }
 
