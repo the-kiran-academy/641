@@ -20,19 +20,13 @@ export class RegisterComponent {
   )
 
   register() {
-    this.service.register(this.employee.value).subscribe(
-      {
-        next: (res) => {
-          alert('User Added !')
-        },
-        error: (httpErrorResponse) => {
-          console.log('====================================');
-          console.log(httpErrorResponse);
-          console.log('====================================');
-          alert(httpErrorResponse.error.message)
-        }
+    this.service.register(this.employee.value).subscribe(res => {
+      if (res != null) {
+        alert('User Added !')
+      } else {
+        alert('Invalid Credientials !');
       }
-    )
+    })
 
 
   }
