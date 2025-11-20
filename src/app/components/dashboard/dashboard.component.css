@@ -2,7 +2,9 @@ header {
   background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-
+h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
 .custom-table {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
