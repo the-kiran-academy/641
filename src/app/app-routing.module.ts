@@ -21,11 +21,4 @@ const routes: Routes = [
   },
   {
     path:'update/:id',component:UpdateEmployeeComponent
-  }
-];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+ { }
